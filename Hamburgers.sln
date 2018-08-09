@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hamburgers", "Hamburgers\Hamburgers.csproj", "{57EA677D-3548-45D7-8150-9BA8FDAD1CC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hamburger.Domain", "Hamburger.Domain\Hamburger.Domain.csproj", "{53DA552F-76CF-4228-BE82-32DC49C80F95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EB62A0CF-E9EA-49B5-9BA8-1135A62CBB81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hamburger.Grain", "Hamburger.Grain\Hamburger.Grain.csproj", "{B940778D-57D4-43E8-A135-4DA097D71EF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hamburger.Grains.Interfaces", "Hamburger.Grains.Interfaces\Hamburger.Grains.Interfaces.csproj", "{76BF0E9D-D2A4-4D56-80D8-A419DDBE3A08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamburgerDemo", "HamburgerDemo\HamburgerDemo.csproj", "{4499E994-2E03-4332-B7E2-E3DCB86CA906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hamburger.Silo", "Hamburger.Silo\Hamburger.Silo.csproj", "{EBE8DA9E-5FFB-440A-A5F9-04BAAEEB5EF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +21,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{57EA677D-3548-45D7-8150-9BA8FDAD1CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57EA677D-3548-45D7-8150-9BA8FDAD1CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57EA677D-3548-45D7-8150-9BA8FDAD1CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57EA677D-3548-45D7-8150-9BA8FDAD1CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DA552F-76CF-4228-BE82-32DC49C80F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DA552F-76CF-4228-BE82-32DC49C80F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DA552F-76CF-4228-BE82-32DC49C80F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DA552F-76CF-4228-BE82-32DC49C80F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B940778D-57D4-43E8-A135-4DA097D71EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B940778D-57D4-43E8-A135-4DA097D71EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B940778D-57D4-43E8-A135-4DA097D71EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B940778D-57D4-43E8-A135-4DA097D71EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BF0E9D-D2A4-4D56-80D8-A419DDBE3A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BF0E9D-D2A4-4D56-80D8-A419DDBE3A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BF0E9D-D2A4-4D56-80D8-A419DDBE3A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BF0E9D-D2A4-4D56-80D8-A419DDBE3A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4499E994-2E03-4332-B7E2-E3DCB86CA906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4499E994-2E03-4332-B7E2-E3DCB86CA906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4499E994-2E03-4332-B7E2-E3DCB86CA906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4499E994-2E03-4332-B7E2-E3DCB86CA906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE8DA9E-5FFB-440A-A5F9-04BAAEEB5EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE8DA9E-5FFB-440A-A5F9-04BAAEEB5EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE8DA9E-5FFB-440A-A5F9-04BAAEEB5EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE8DA9E-5FFB-440A-A5F9-04BAAEEB5EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53DA552F-76CF-4228-BE82-32DC49C80F95} = {EB62A0CF-E9EA-49B5-9BA8-1135A62CBB81}
+		{B940778D-57D4-43E8-A135-4DA097D71EF7} = {EB62A0CF-E9EA-49B5-9BA8-1135A62CBB81}
+		{76BF0E9D-D2A4-4D56-80D8-A419DDBE3A08} = {EB62A0CF-E9EA-49B5-9BA8-1135A62CBB81}
+		{EBE8DA9E-5FFB-440A-A5F9-04BAAEEB5EF6} = {EB62A0CF-E9EA-49B5-9BA8-1135A62CBB81}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A2B696D-BA0D-4409-B4AF-9483D884B62D}
